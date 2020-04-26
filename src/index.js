@@ -1,6 +1,7 @@
 var get = require('lodash/fp/get')
 var kebabCase = require('lodash/fp/kebabCase')
-var moment = require('moment')
+var isDate = require('date-fns/isDate')
+var format = require('date-fns/format')
 
 // function charHash(string) {
 const charHash = string => {
@@ -24,7 +25,7 @@ const charHash = string => {
 //let uh=require("unique-hash").default
 
 const Format = path => (path ? path + '/' : '')
-const getDatePath = (date, formatDate = 'YYYY/MM/DD') => (moment(date).isValid() ? moment(date).format(formatDate) : '')
+const getDatePath = (date, formatDate = 'yyyy/MM/dd') => (isDate(date) ? format(date, formatDate) : '')
 const getOptionsPath = (options, prop) => get(`${prop}`, options)
 // const getOptionsPath = (options,prop) =>Format(_.get(options,`${prop}`));
 
