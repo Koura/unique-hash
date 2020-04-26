@@ -72,7 +72,7 @@ uniqueHash(url,{
   append:"videos",
   appendDate:"hot",
   date:new Date(),
-  formatDate:"YYYY/DD",
+  formatDate:"yyyy/DD",
   format:"string"
  })
  //>> output "articles/2017/08/hot/iIIHaAIG/videos"
@@ -86,7 +86,7 @@ uniqueHash(url,{
 | format | "number" | options: "number", "string" or "kebabCase" |
 | prepend | "" | string to prepend output path  |
 | append | "" |string to append output path  |
-| appendDate | "" |  string to center between date and hash id  (eg. output `/YYYY/MM/DD/[HERE]/:hashId`) |
+| appendDate | "" |  string to center between date and hash id  (eg. output `/yyyy/MM/dd/[HERE]/:hashId`) |
 | date | n/a | pass in date to append /YYYY/MM/DD to save path |
-| dateFormate | "YYYY/MM/DD" | Date format |
+| dateFormat | "yyyy/MM/dd" | Date format |
 | hashId | n/a | override the output hashId, useful if you want to use with date.  |

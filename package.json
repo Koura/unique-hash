@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/garrettmac/unique-hash#readme",
   "dependencies": {
-    "lodash": "^4.17.4",
-    "moment": "^2.18.1"
+    "date-fns": "^2.12.0",
+    "lodash": "^4.17.4"
   }
 }
